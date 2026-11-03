@@ -1,0 +1,12 @@
+[Unit]
+Description=Omerta Enforcer — Web UI (только через VPN, IP моста из /etc/omerta-enforcer.env)
+After=network.target docker.service
+Wants=docker.service
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/blocklist-ui/app.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

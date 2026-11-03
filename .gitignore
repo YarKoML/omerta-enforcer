@@ -1,0 +1,7 @@
+# Токен доступа к UI генерится на сервере (install.sh) — в репо не кладём
+*.token
+blocklist-ui.token
+
+# Служебное
+__pycache__/
+*.pyc

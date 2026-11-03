@@ -1,0 +1,9 @@
+[Unit]
+Description=Omerta Enforcer — refresh blocklist every 5 min
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

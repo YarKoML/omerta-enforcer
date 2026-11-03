@@ -1,0 +1,6 @@
+[Unit]
+Description=Omerta Enforcer — refresh VPN-BLK chain + container quarantine
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/vpn-blocklist.sh
